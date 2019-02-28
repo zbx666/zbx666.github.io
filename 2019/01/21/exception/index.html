@@ -79,13 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java中处理异常的9个最佳实践">
+<meta property="og:url" content="http://yoursite.com/2019/01/21/exception/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-28T08:25:43.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Java中处理异常的9个最佳实践">
+<meta name="twitter:description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
 
 
 
@@ -115,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/21/exception/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title>Java中处理异常的9个最佳实践 | Hexo</title>
   
 
 
@@ -140,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,189 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/21/saluteoneself/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/21/saluteoneself/" itemprop="url">致敬每一个JAVA开发的程序员</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-21T19:35:07+08:00">
-                2019-01-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="敬别人"><a href="#敬别人" class="headerlink" title="敬别人"></a>敬别人</h1><ol>
-<li><p>一程序员去面试，面试官问：“你毕业才两年，这三年工作经验是怎么来的？！”程序员答：“加班。”</p>
-</li>
-<li><p>某程序员对书法十分感兴趣，退休后决定在这方面有所建树。于是花重金购买了上等的文房四宝。一日，饭后突生雅兴，一番磨墨拟纸，并点上了上好的檀香，颇有王羲之风范，又具颜真卿气势，定神片刻，泼墨挥毫，郑重地写下一行字：hello world。</p>
-</li>
-<li><p>问：程序员最讨厌康熙的哪个儿子。答：胤禩。因为他是八阿哥（bug）</p>
-</li>
-<li><p>程序猿要了3个孩子，分别取名叫Ctrl、Alt 和Delete，如果他们不听话，程序猿就只要同时敲他们一下就会好的。</p>
-</li>
-<li><p>今天在公司听到一句惨绝人寰骂人的话：“你TM就是一个没有对象的野指针！”</p>
-</li>
-<li><p>世界上最远的距离，是我在if里你在else里，虽然经常一起出现，但却永不结伴执行。</p>
-</li>
-<li><p>正在码代码ing，医院回来的同事一脸的苦逼样子，问他怎么了？他回答：得了类风湿性关节炎了，我怕会遗传给下一代啊。我一脸的问号：谁说类风湿性关节炎能遗传的？丫一脸诧异：类不是继承的吗？</p>
-</li>
-<li><p>我很奇怪客栈这个词，难道后入住的必须先退房吗？</p>
-</li>
-<li><p>话说，决定一个程序员跳槽与否的关键因素是他前同事的现工资。</p>
-</li>
-<li><p>程序员最憋屈的事情就是：你辛辛苦苦熬夜写了一个风格优雅的源文件，被一个代码风格极差的同事改了且没署名，以至于别人都以为是你写的。</p>
-</li>
-<li><p>前端工程师说，我去交友网站找女朋友去了。朋友问，找到了么？工程师说，找到了他们页面的一个bug。</p>
-</li>
-<li><p>C程序员看不起C++程序员， C++程序员看不起Java程序员， Java程序员看不起C#程序员，C#程序员看不起美工，周末了，美工带着妹子出去约会了，一群程序员还在加班！</p>
-</li>
-<li><p>据说一老外年轻的时候，立志要当一名伟大的作家。怎么才算伟大呢？他说：我写的东西全世界都要看到！看完他们必定会歇斯底里！会火冒三丈！会痛苦万分！结果，他成功了，他在微软公司负责写系统蓝屏时的报错提示信息。</p>
-</li>
-<li><p>程序员应聘必备词汇：了解＝听过名字；熟悉＝知道是啥；熟练＝用过；精通＝做过东西。</p>
-</li>
-<li><p>两程序员聊天，程序员甲抱怨：“做程序员太辛苦了，我想换行……我该怎么办？”程序员乙：“敲一下回车。”</p>
-</li>
-<li><p>程序员最讨厌的四件事：写注释、写文档、别人不写注释、别人不写文档……</p>
-</li>
-</ol>
-<h1 id="敬自己"><a href="#敬自己" class="headerlink" title="敬自己"></a>敬自己</h1><pre><code>两年多 一个人
-
-风也过 雨也走
-
-有过泪 有过错
-
-还记得坚持甚麽
-
-真项目 才会懂
-
-会线程 会分布
-
-终有梦 终有你 在心中
-
-JAVA 一生一起走
-
-那些日子 不再有
-
-一句话 一辈子
-
-一生情 一杯酒
-
-JAVA 不曾孤单过
-
-一声JAVA 你会懂
-
-还有伤 还有痛
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -426,9 +249,7 @@ JAVA 不曾孤单过
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/21/exception/" itemprop="url">Java中处理异常的9个最佳实践</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java中处理异常的9个最佳实践</h1>
         
 
         <div class="post-meta">
@@ -478,9 +299,7 @@ JAVA 不曾孤单过
       
 
       
-        
-          
-            <p>Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。</p>
+        <p>Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。</p>
 <p>这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。</p>
 <p>然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。</p>
 <h2 id="1-在Finally中清理资源或者使用Try-With-Resource语句"><a href="#1-在Finally中清理资源或者使用Try-With-Resource语句" class="headerlink" title="1. 在Finally中清理资源或者使用Try-With-Resource语句"></a>1. 在Finally中清理资源或者使用Try-With-Resource语句</h2><p>通常情况下，你在try中使用了一个资源，比如 InputStream ，之后需要关闭它。在这种情况下，一个常见的错误是在try的末尾关闭了资源。</p>
@@ -631,8 +450,6 @@ throw e;
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>正如你所看到的，在抛出或捕获异常时，有许多不同的事情需要考虑。以上大多数方法都可以提高代码可读性或API可用性。</p>
 <p>异常通常是一个错误处理机制和一个通信媒介。因此，你应该确保同事一起讨论想要应用的最佳实践和方法，以便每个人都理解通用概念并以相同的方式使用它们。</p>
 
-          
-        
       
     </div>
     
@@ -649,12 +466,28 @@ throw e;
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/21/saluteoneself/" rel="prev" title="致敬每一个JAVA开发的程序员">
+                致敬每一个JAVA开发的程序员 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -664,10 +497,11 @@ throw e;
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -675,6 +509,10 @@ throw e;
 
 
           
+
+  
+
+
 
         </div>
         
@@ -695,8 +533,17 @@ throw e;
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -738,6 +585,22 @@ throw e;
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在Finally中清理资源或者使用Try-With-Resource语句"><span class="nav-number">1.</span> <span class="nav-text">1. 在Finally中清理资源或者使用Try-With-Resource语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Finally"><span class="nav-number">1.1.</span> <span class="nav-text">使用Finally</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-7的Try-With-Resource语句"><span class="nav-number">1.2.</span> <span class="nav-text">Java 7的Try-With-Resource语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-给出准确的异常处理信息"><span class="nav-number">2.</span> <span class="nav-text">2. 给出准确的异常处理信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-记录你所指定的异常"><span class="nav-number">3.</span> <span class="nav-text">3. 记录你所指定的异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-使用描述性消息抛出异常"><span class="nav-number">4.</span> <span class="nav-text">4. 使用描述性消息抛出异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-最先捕获特定的异常"><span class="nav-number">5.</span> <span class="nav-text">5. 最先捕获特定的异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-不要在catch中使用Throwable"><span class="nav-number">6.</span> <span class="nav-text">6. 不要在catch中使用Throwable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-不要忽略Exceptions"><span class="nav-number">7.</span> <span class="nav-text">7. 不要忽略Exceptions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-不要记录和抛出一个异常"><span class="nav-number">8.</span> <span class="nav-text">8. 不要记录和抛出一个异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-包装异常"><span class="nav-number">9.</span> <span class="nav-text">9. 包装异常</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -878,6 +741,10 @@ throw e;
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
