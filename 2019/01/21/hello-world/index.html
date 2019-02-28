@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="Java中处理异常的9个最佳实践">
 <meta property="og:url" content="http://yoursite.com/2019/01/21/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-21T11:16:13.560Z">
+<meta property="og:updated_time" content="2019-02-28T08:25:43.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Java中处理异常的9个最佳实践">
+<meta name="twitter:description" content="Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。 这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。 然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。 1. 在Finally中清理资源或">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>Java中处理异常的9个最佳实践 | Hexo</title>
   
 
 
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Java中处理异常的9个最佳实践</h1>
         
 
         <div class="post-meta">
@@ -299,15 +299,156 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>Java中的异常处理不是一个简单的话题。初学者很难理解，甚至有经验的开发人员也会花几个小时来讨论应该如何抛出或处理这些异常。</p>
+<p>这就是为什么大多数开发团队都有自己的异常处理的规则和方法。如果你是一个团队的新手，你可能会惊讶于这些方法与你之前使用过的那些方法有多么不同。</p>
+<p>然而，有几种异常处理的最佳方法被大多数开发团队所使用。下面是帮助改进异常处理的9个最重要的方法。</p>
+<h2 id="1-在Finally中清理资源或者使用Try-With-Resource语句"><a href="#1-在Finally中清理资源或者使用Try-With-Resource语句" class="headerlink" title="1. 在Finally中清理资源或者使用Try-With-Resource语句"></a>1. 在Finally中清理资源或者使用Try-With-Resource语句</h2><p>通常情况下，你在try中使用了一个资源，比如 InputStream ，之后需要关闭它。在这种情况下，一个常见的错误是在try的末尾关闭了资源。</p>
+<p>public void doNotCloseResourceInTry() {</p>
+<pre><code>FileInputStream inputStream = null;
+try {
+    File file = new File(&quot;./tmp.txt&quot;);
+    inputStream = new FileInputStream(file);
+    // use the inputStream to read a file
+    // do NOT do this
+    inputStream.close();
+} catch (FileNotFoundException e) {
+    log.error(e);
+} catch (IOException e) {
+    log.error(e);
+}
+</code></pre><p>}</p>
+<p>问题是，只要不抛出异常，这种方法就可以很好地运行。try内的所有语句都将被执行，资源也会被关闭。</p>
+<p>但是你在try里调用了一个或多个可能抛出异常的方法，或者自己抛出异常。这意味着可能无法到达try的末尾。因此，将不会关闭这些资源。</p>
+<p>所以应该将清理资源的代码放入Finally中，或者使用Try-With-Resource语句。</p>
+<h3 id="使用Finally"><a href="#使用Finally" class="headerlink" title="使用Finally"></a>使用Finally</h3><p>相比于try，无论是在成功执行try里的代码后，或是在catch中处理了一个异常后，Finally里的内容是一定会被执行的。因此，可以确保清理所有已打开的资源。</p>
+<p>public void closeResourceInFinally() {</p>
+<pre><code>FileInputStream inputStream = null;
+try {
+    File file = new File(&quot;./tmp.txt&quot;);
+    inputStream = new FileInputStream(file);
+    // use the inputStream to read a file
+} catch (FileNotFoundException e) {
+    log.error(e);
+} finally {
+    if (inputStream != null) {
+        try {
+            inputStream.close();
+        } catch (IOException e) {
+            log.error(e);
+        }
+    }
+}
+</code></pre><p>}</p>
+<h3 id="Java-7的Try-With-Resource语句"><a href="#Java-7的Try-With-Resource语句" class="headerlink" title="Java 7的Try-With-Resource语句"></a>Java 7的Try-With-Resource语句</h3><p>另一个选择是Try-With-Resource语句，在 introduction to Java exception handling 中更详细地说明了这一点。</p>
+<p>如果你的资源实现了 AutoCloseable 接口，就可以使用它，这正是大多数Java标准资源所做的。当你在try子句中打开资源时，它将在try被执行后自动关闭，或者处理一个异常。<br>public void automaticallyCloseResource() {</p>
+<pre><code>File file = new File(&quot;./tmp.txt&quot;);
+try (FileInputStream inputStream = new FileInputStream(file);) {
+    // use the inputStream to read a file
+} catch (FileNotFoundException e) {
+    log.error(e);
+} catch (IOException e) {
+    log.error(e);
+}
+</code></pre><p>}</p>
+<h2 id="2-给出准确的异常处理信息"><a href="#2-给出准确的异常处理信息" class="headerlink" title="2. 给出准确的异常处理信息"></a>2. 给出准确的异常处理信息</h2><p>你抛出的异常越具体越好。一定要记住，一个不太了解你代码的同事，也许几个月后，需要调用你的方法，并且处理这个异常。</p>
+<p>因此，请确保提供尽可能多的信息，这会使你的API更容易理解。因此，你方法的调用者将能够更好地处理异常，或者通过额外的检查来避免它。</p>
+<p>所以，要尽量能更好地描述你的异常处理信息，比如用 NumberFormatException 代替 IllegalArgumentException ，避免抛出一个不具体的异常。<br>public void doNotDoThis() throws Exception {</p>
+<pre><code>...
+</code></pre><p>}<br>public void doThis() throws NumberFormatException {</p>
+<pre><code>...
+</code></pre><p>}</p>
+<h2 id="3-记录你所指定的异常"><a href="#3-记录你所指定的异常" class="headerlink" title="3. 记录你所指定的异常"></a>3. 记录你所指定的异常</h2><p>当你在方法中指定一个异常时，你应该在Javadoc中记录下它。这与前面提到的方法有着相同的目标：为调用者提供尽可能多的信息，这样他们就可以避免异常或者更容易地处理异常。</p>
+<p>因此，请确保在Javadoc中添加一个@throws 声明，并描述可能导致的异常情况。</p>
+<p>/**</p>
+<ul>
+<li>This method does something extremely useful …<br>*</li>
+<li>@param input</li>
+<li><p>@throws MyBusinessException if … happens<br>*/<br>public void doSomething(String input) throws MyBusinessException {</p>
+<p> …<br>}</p>
+</li>
+</ul>
+<h2 id="4-使用描述性消息抛出异常"><a href="#4-使用描述性消息抛出异常" class="headerlink" title="4. 使用描述性消息抛出异常"></a>4. 使用描述性消息抛出异常</h2><p>这一最佳实践的理念与前两个相似。但这一次，你不用给调用方法的人提供信息。异常消息会被所有人读取，同时必须了解在日志文件或监视工具中报告异常时发生了什么。</p>
+<p>因此，应该尽可能准确地描述问题，并提供相关的信息来了解异常事件。</p>
+<p>别误会，你不需要写一段文字，而是应该用1-2个简短的句子解释异常的原因。这可以帮助开发团队理解问题的严重性，同时也使你能够更容易地分析任何服务事件。</p>
+<p>如果抛出一个特定的异常，它的类名很可能已经描述了这种类型的错误。所以，你不需要提供很多额外的信息。一个很好的例子就是，当你以错误的格式使用字符串时，如NumberFormatException，它就会被类 java.lang.Long的构造函数抛出。</p>
+<p>try {</p>
+<pre><code>new Long(&quot;xyz&quot;);
+</code></pre><p>} catch (NumberFormatException e) {</p>
+<pre><code>log.error(e);
+</code></pre><p>}</p>
+<p>NumberFormatException已经告诉你问题的类型，所以只需要提供导致问题的输入字符串。如果异常类的名称不具有表达性，那么就需要提供必要的解释信息。<br>17:17:26,386 ERROR TestExceptionHandling:52java.lang.NumberFormatException: For input string: “xyz”</p>
+<h2 id="5-最先捕获特定的异常"><a href="#5-最先捕获特定的异常" class="headerlink" title="5. 最先捕获特定的异常"></a>5. 最先捕获特定的异常</h2><p>大多数IDE都可以帮助你做到这点，当你试图捕获不确定的异常时，它会报告一个不可到达的代码块。</p>
+<p>问题是只有第一个匹配到异常的catch语句才会被执行，所以，如果你最先发现IllegalArgumentException，你将永远不会到达catch里处理更具体的NumberFormatException，因为它是IllegalArgumentException的一个子类。</p>
+<p>所以要首先捕获特定的异常类，并在末尾添加一些处理不是很具体异常的catch语句。</p>
+<p>你可以在下面的代码片段中看到这样一个try-catch语句的示例。第一个catch处理所有NumberFormatExceptions异常，第二个catch 处理NumberFormatException异常以外的illegalargumentexception异常。</p>
+<p>public void catchMostSpecificExceptionFirst() {</p>
+<pre><code>try {
+    doSomething(&quot;A message&quot;);
+} catch (NumberFormatException e) {
+    log.error(e);
+} catch (IllegalArgumentException e) {
+    log.error(e)
+}
+</code></pre><p>}</p>
+<h2 id="6-不要在catch中使用Throwable"><a href="#6-不要在catch中使用Throwable" class="headerlink" title="6. 不要在catch中使用Throwable"></a>6. 不要在catch中使用Throwable</h2><p>Throwable 是exceptions 和 errors的父类。当然，你可以在catch子句中使用它，但其实你不应该这样做。</p>
+<p>如果你在catch子句中使用Throwable，它将不仅捕获所有的异常，还会捕获所有错误。JVM会抛出错误，这是应用程序不打算处理的严重问题。典型的例子是 OutOfMemoryError 或 StackOverflowError 。这两种情况都是由应用程序控制之外的情况引起的，无法处理。</p>
+<p>所以，最好不要在catch中使用Throwable，除非你完全确定自己处于一个特殊的情况下，并且你需要处理一个错误。</p>
+<p>public void doNotCatchThrowable() {</p>
+<pre><code>try {
+    // do something
+} catch (Throwable t) {
+    // don&apos;t do this!
+}
+</code></pre><p>}</p>
+<h2 id="7-不要忽略Exceptions"><a href="#7-不要忽略Exceptions" class="headerlink" title="7. 不要忽略Exceptions"></a>7. 不要忽略Exceptions</h2><p>你是否曾经分析过只有用例的第一部分才被执行的bug报告吗?</p>
+<p>这通常是由一个被忽略的异常引起的。开发人员可能非常确信它不会被抛出，并添加一个无法处理或无法记录它的catch语句。当你发现它的时候，你很可能就会明白一句著名的话“This will never happen”。</p>
+<p>public void doNotIgnoreExceptions() {</p>
+<pre><code>try {
+    // do something
+} catch (NumberFormatException e) {
+    // this will never happen
+}
+</code></pre><p>}</p>
+<p>是的，你可能在分析一个不可能发生的问题。</p>
+<p>所以，请千万不要忽略一个例外。你不会知道代码在将来会发生什么变化。有些人可能会删除阻止异常事件的验证，而没有意识到这造成了问题。或者抛出异常的代码被更改，现在抛出了同一个类的多个异常，而调用的代码并不能阻止所有这些异常。</p>
+<p>你至少应该写一个日志信息，告诉每个人，需要检查一下这个问题。</p>
+<p>public void logAnException() {</p>
+<pre><code>try {
+    // do something
+} catch (NumberFormatException e) {
+    log.error(&quot;This should never happen: &quot; + e);
+}
+</code></pre><p>}</p>
+<h2 id="8-不要记录和抛出一个异常"><a href="#8-不要记录和抛出一个异常" class="headerlink" title="8. 不要记录和抛出一个异常"></a>8. 不要记录和抛出一个异常</h2><p>这可能是最常被忽略的。你可以在许多代码片段或者库文件里发现，有异常会被捕获、记录和重新抛出。</p>
+<p>try {</p>
+<pre><code>new Long(&quot;xyz&quot;);
+</code></pre><p>} catch (NumberFormatException e) {</p>
+<pre><code>log.error(e);
+throw e;
+</code></pre><p>}</p>
+<p>当它发生时记录一个异常，然后重新抛出它，以便调用者能够适当地处理它，这可能会很直观。但是它会为同一个异常写多个错误消息。</p>
+<p>17:44:28,945 ERROR TestExceptionHandling:65 - java.lang.NumberFormatException: For input string: “xyz”<br>Exception in thread “main” java.lang.NumberFormatException: For input string: “xyz”<br>at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)<br>at java.lang.Long.parseLong(Long.java:589)<br>at java.lang.Long.(Long.java:965)<br>at com.stackify.example.TestExceptionHandling.logAndThrowException(TestExceptionHandling.java:63)<br>at com.stackify.example.TestExceptionHandling.main(TestExceptionHandling.java:58)</p>
+<p>不添加任何额外的信息。正如在上述第4个中所解释的那样，异常消息应该描述异常事件。堆栈会告诉你在哪个类、方法和行中异常被抛出。</p>
+<p>如果你需要添加额外的信息，应该捕获异常并将其包装在一个自定义的信息中。但要确保遵循下面的第9条。</p>
+<p>public void wrapException(String input) throws MyBusinessException {</p>
+<pre><code>try {
+    // do something
+} catch (NumberFormatException e) {
+    throw new MyBusinessException(&quot;A message that describes the error.&quot;, e);
+}
+</code></pre><p>}</p>
+<p>因此，只需要捕获一个你想要处理的异常，在方法中指定它，并让调用者处理它。</p>
+<h2 id="9-包装异常"><a href="#9-包装异常" class="headerlink" title="9. 包装异常"></a>9. 包装异常</h2><p>有时最好捕获一个标准异常并将其封装到一个定制的异常中。此类异常的典型例子是应用程序或框架特定的业务异常。这允许你添加额外的信息，并且也可以为异常类实现一个特殊的处理。</p>
+<p>当你这样做时，确保引用原始的异常处理。Exception类提供了一些特定的构造函数方法，这些方法可以接受Throwable作为参数。否则，你将丢失原始异常的堆栈跟踪和消息，这将使你很难分析导致异常的事件。</p>
+<p>public void wrapException(String input) throws MyBusinessException {</p>
+<pre><code>try {
+    // do something
+} catch (NumberFormatException e) {
+    throw new MyBusinessException(&quot;A message that describes the error.&quot;, e);
+}
+</code></pre><p>}</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>正如你所看到的，在抛出或捕获异常时，有许多不同的事情需要考虑。以上大多数方法都可以提高代码可读性或API可用性。</p>
+<p>异常通常是一个错误处理机制和一个通信媒介。因此，你应该确保同事一起讨论想要应用的最佳实践和方法，以便每个人都理解通用概念并以相同的方式使用它们。</p>
 
       
     </div>
@@ -454,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在Finally中清理资源或者使用Try-With-Resource语句"><span class="nav-number">1.</span> <span class="nav-text">1. 在Finally中清理资源或者使用Try-With-Resource语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Finally"><span class="nav-number">1.1.</span> <span class="nav-text">使用Finally</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-7的Try-With-Resource语句"><span class="nav-number">1.2.</span> <span class="nav-text">Java 7的Try-With-Resource语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-给出准确的异常处理信息"><span class="nav-number">2.</span> <span class="nav-text">2. 给出准确的异常处理信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-记录你所指定的异常"><span class="nav-number">3.</span> <span class="nav-text">3. 记录你所指定的异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-使用描述性消息抛出异常"><span class="nav-number">4.</span> <span class="nav-text">4. 使用描述性消息抛出异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-最先捕获特定的异常"><span class="nav-number">5.</span> <span class="nav-text">5. 最先捕获特定的异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-不要在catch中使用Throwable"><span class="nav-number">6.</span> <span class="nav-text">6. 不要在catch中使用Throwable</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-不要忽略Exceptions"><span class="nav-number">7.</span> <span class="nav-text">7. 不要忽略Exceptions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-不要记录和抛出一个异常"><span class="nav-number">8.</span> <span class="nav-text">8. 不要记录和抛出一个异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-包装异常"><span class="nav-number">9.</span> <span class="nav-text">9. 包装异常</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number"></span> <span class="nav-text">总结</span></a></li></div>
             
 
           </div>
